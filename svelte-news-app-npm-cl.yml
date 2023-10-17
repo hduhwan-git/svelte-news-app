@@ -4,8 +4,10 @@
 name:  Svelte News App Node.js Package CI TEST Workflow
 
 on:
-  release:
-    types: [created]
+  push:
+    branches : ["main"]
+  pull_request:
+    branches: ["main"]  
 
 jobs:
   test:
